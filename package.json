@@ -24,7 +24,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/ariennn/startbootstrap-creative.git"
+        "url": "https://github.com/adriennn/avokaato.git"
     },
     "dependencies": {
         "bootstrap": "^4.0.0-beta",
