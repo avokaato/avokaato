@@ -7,22 +7,10 @@ var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 
-// Set the banner content
-var banner = ['/*!\n',
-  ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-  ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-  ' * Licensed under <%= pkg.license %> (https://github.com/BlackrockDigital/<%= pkg.name %>/blob/master/LICENSE)\n',
-  ' */\n',
-  ''
-].join('');
-
 // Compiles SCSS files from /scss into /css
 gulp.task('sass', function() {
   return gulp.src('scss/creative.scss')
     .pipe(sass())
-    .pipe(header(banner, {
-      pkg: pkg
-    }))
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({
       stream: true
@@ -74,14 +62,8 @@ gulp.task('copy', function() {
   gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
     .pipe(gulp.dest('vendor/jquery'))
 
-  gulp.src(['node_modules/magnific-popup/dist/*'])
-    .pipe(gulp.dest('vendor/magnific-popup'))
-
   gulp.src(['node_modules/scrollreveal/dist/*.js'])
     .pipe(gulp.dest('vendor/scrollreveal'))
-
-  gulp.src(['node_modules/popper.js/dist/umd/popper.js', 'node_modules/popper.js/dist/umd/popper.min.js'])
-    .pipe(gulp.dest('vendor/popper'))
 
   gulp.src(['node_modules/jquery.easing/*.js'])
     .pipe(gulp.dest('vendor/jquery-easing'))

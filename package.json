@@ -1,8 +1,8 @@
 {
-    "title": "Createive",
-    "name": "startbootstrap-creative",
+    "title": "avokaato",
+    "name": "avokaato-landing",
     "version": "4.0.0-beta",
-    "description": "Creative is a stylish one page HTML theme for Bootstrap.",
+    "description": "Landing page for avokaa.to.",
     "keywords": [
         "css",
         "sass",
@@ -11,19 +11,20 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/creative",
+    "homepage": "https://avokaa.to",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-creative/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "",
+        "email": "feedback@avokaa.to"
     },
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "David Miller (http://davidmiller.io/)",
+        "@adriennn"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
+        "url": "https://github.com/ariennn/startbootstrap-creative.git"
     },
     "dependencies": {
         "bootstrap": "^4.0.0-beta",
